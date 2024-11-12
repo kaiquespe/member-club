@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.header h1 {
+  text-align: center;
+  color: #ff66cc;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #cccccc;
+}
+
+.card-input button {
+  padding: 10px;
+  border: none;
+  background-color: #cccccc;
+  border-radius: 0 8px 8px 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.fidelity-card {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.stamps {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.stamp {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.completed {
+  background-color: #66cc66;
+}
+
+.empty {
+  background-color: #e0e0e0;
+}
+
+.gift {
+  background-color: #ff66cc;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.progress {
+  width: 70%; /* Ajustar */
+  height: 100%;
+  background-color: #66cc66;
+  border-radius: 5px;
+}
+
+.history {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.history h3,
+.history p {
+  margin-bottom: 10px;
+}
+
+.history ul {
+  list-style: none;
+}
+
+.history li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+.stamp-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #66cc66;
+  border-radius: 50%;
+}
+
