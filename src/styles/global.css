@@ -17,7 +17,10 @@
   --white: #ffffff;
   --background-color: #e9e7e9;
   --font-family: "Oxygen", sans-serif;
-  --text-lg: bold 32px/125% var(--font-family);
+  --title-md: bold 24px/140% var(--font-family);
+  --title-sm: bold 18px/140% var(--font-family);
+  --subtitle-md: bold 14px/140% var(--font-family);
+  --subtitle-sm: bold 12px/140% var(--font-family);
   --text-md: 16px/140% var(--font-family);
   --text-sm: 14px/140% var(--font-family);
   --text-xs: 12px/140% var(--font-family);
@@ -37,4 +40,10 @@ a {
 a:hover {
   text-decoration: underline;
   color: var(--gray-600);
+}
+
+.card {
+  background-color: var(--gray-100);
+  border-radius: 16px;
+  border: 1px solid var(--gray-300);
 }

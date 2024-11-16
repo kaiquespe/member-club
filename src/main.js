@@ -7,3 +7,4 @@ import "./libs/dayjs.js";
 import "./styles/global.css";
 import "./styles/body.css";
 import "./styles/header.css";
+import "./styles/fidelity-card.css";

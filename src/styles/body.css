@@ -3,14 +3,19 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px;
 }
 
 .user-info {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 .user-info img {
@@ -19,52 +24,11 @@ body {
   border-radius: 50%;
 }
 
-.fidelity-card {
-  padding: 20px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.card-header {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9em;
-  color: #888;
-  margin-bottom: 10px;
-}
-
-.stamps {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
-}
-
-.stamp {
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-}
-
-.completed {
-  background-color: #66cc66;
-}
-
-.empty {
-  background-color: #e0e0e0;
-}
-
-.gift {
-  background-color: #ff66cc;
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .progress-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 32px;
 }
 
 .progress-bar {
@@ -79,13 +43,16 @@ body {
   width: 70%;
   /* Ajustar */
   height: 100%;
-  background: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+  background: linear-gradient(90deg,
+      #2daa6e 0%,
+      #2daaaa 33.33%,
+      #856ccf 66.67%,
+      #d658b3 100%);
   border-radius: 5px;
 }
 
 .history {
-  background-color: #f7f7f7;
-  padding: 15px;
+  padding: 20px;
   border-radius: 10px;
 }
 
