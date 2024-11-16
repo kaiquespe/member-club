@@ -29,7 +29,7 @@ body {
   border: 3px solid var(--gray-100);
 }
 
-.user .teste {
+.user .profile {
   display: flex;
   justify-content: center;
   align-items: center;
