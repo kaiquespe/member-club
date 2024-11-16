@@ -15,7 +15,6 @@
   --gray-200: #e9e7e9;
   --gray-100: #f4f1f2;
   --white: #ffffff;
-  --background-color: #e9e7e9;
   --font-family: "Oxygen", sans-serif;
   --title-md: bold 24px/140% var(--font-family);
   --title-sm: bold 18px/140% var(--font-family);
@@ -29,7 +28,7 @@
 body {
   font: var(--text-md);
   color: var(--gray-500);
-  background-color: var(--background-color);
+  background-color: var(--gray-200);
 }
 
 a {
