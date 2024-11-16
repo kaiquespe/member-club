@@ -24,33 +24,6 @@ body {
   border-radius: 50%;
 }
 
-.progress-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px;
-}
-
-.progress-bar {
-  flex: 1;
-  height: 5px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
-  margin: 0 10px;
-}
-
-.progress {
-  width: 70%;
-  /* Ajustar */
-  height: 100%;
-  background: linear-gradient(90deg,
-      #2daa6e 0%,
-      #2daaaa 33.33%,
-      #856ccf 66.67%,
-      #d658b3 100%);
-  border-radius: 5px;
-}
-
 .history {
   padding: 20px;
   border-radius: 10px;
