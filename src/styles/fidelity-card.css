@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
+    gap: 16px;
     margin-bottom: 20px;
 
     span {
@@ -24,7 +24,7 @@
     font: var(--text-xs);
     color: #888;
     margin-bottom: 10px;
-    max-width: 150px;
+    max-width: 172px;
 
     h3 {
         font: var(--subtitle-md);
