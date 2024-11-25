@@ -1,15 +1,53 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 8px;
-  margin: 8px;
+  grid-template-areas:
+    "user"
+    "fidelity"
+    "progresso"
+    "history";
+}
+
+.card.user {
+  grid-area: user;
+}
+
+.card.fidelity {
+  grid-area: fidelity;
+}
+
+.card.progress-info {
+  grid-area: progresso;
+}
+
+.card.history {
+  grid-area: history;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 320px 568px; 
+    grid-template-rows: 90px 240px 117px 117px; 
+    gap: 16px;
+    column-gap: 24px;
+    grid-template-areas:
+      "user fidelity"   
+      "history fidelity"
+      "history progresso"; 
+  }
+
+  header {
+    margin-bottom: 4rem;
+  }
 }
 
 .user {
@@ -74,6 +112,9 @@ body {
 
 .history ul {
   list-style: none;
+  max-height: 300px;
+  overflow-y: auto; 
+  padding-right: 28px;
 }
 
 .history li {
@@ -89,4 +130,17 @@ body {
   strong {
     color: var(--gray-600);
   }
+}
+
+.history ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history ul::-webkit-scrollbar-thumb {
+  background: var(--gray-300);
+  border-radius: 999px;
+}
+
+.history ul::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-400);
 }

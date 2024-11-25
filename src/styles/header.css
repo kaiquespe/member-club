@@ -6,6 +6,7 @@ header {
   img {
     width: 116px;
     height: 56px;
+    margin-top: 2rem;
   }
 }
 
@@ -14,12 +15,12 @@ header {
   position: relative;
   align-items: center;
   width: 100%;
-  margin: 24px 0;
+  margin: 8px 0;
 
   input {
     padding: 8px 48px 8px 16px;
     border-radius: 12px;
-    width: 100%;
+    width: 24rem;
     height: 56px;
     border: 1px solid var(--gray-400);
     box-sizing: border-box;
