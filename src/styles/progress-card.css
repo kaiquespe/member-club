@@ -1,53 +1,65 @@
 .progress-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 20px;
 }
 
 .card.progress-info div:first-child {
-    flex: 1;
+  flex: 1;
+}
+
+.progress-content span strong {
+  font: var(--title-sm);
+  color: var(--gray-600);
 }
 
 .progress-bar {
-    position: relative;
-    height: 8px;
-    width: 100%;
-    background-color: var(--gray-300);
-    border-radius: 4px;
-    margin: 8px 0;
+  position: relative;
+  height: 8px;
+  width: 100%;
+  background-color: var(--gray-300);
+  border-radius: 4px;
+  margin: 8px 0;
 }
 
 .progress-bar-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .progress {
-    height: 100%;
-    width: 70%;
-    /* ajustar*/
-    background: linear-gradient(to right, #34d399, #8b5cf6, #ec4899);
-    border-radius: 4px;
+  height: 100%;
+  width: 70%;
+  /* ajustar de acordo progresso*/
+  background: linear-gradient(to right, #34d399, #8b5cf6, #ec4899);
+  border-radius: 4px;
 }
 
 .progress-text {
-    font: var(--text-xs);
+  font: var(--text-xs);
 }
 
 .stamp-progress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 999px;
-    background-color: var(--gray-200);
-    width: 60px;
-    height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  background-color: var(--gray-200);
+  width: 60px;
+  height: 60px;
 }
 
 .stamp-progress img {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+@media (min-width: 768px) {
+  .progress-content span strong {
+    font: var(--title-md);
+    color: var(--gray-600);
+  }
 }

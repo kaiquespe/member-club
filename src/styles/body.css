@@ -79,13 +79,13 @@ body {
 
 .info {
   h2 {
-    font: var(--title-md);
+    font: var(--title-sm);
     color: var(--gray-600);
     margin-bottom: 4px;
   }
 
   p {
-    font: var(--text-sm);
+    font: var(--text-xs);
   }
 }
 
@@ -101,13 +101,18 @@ body {
   margin-bottom: 16px;
 
   h3 {
-    font: var(--subtitle-md);
+    font: var(--subtitle-sm);
     color: var(--gray-500);
   }
 
   span {
-    font: var(--text-sm);
+    font: var(--text-xs);
   }
+}
+
+hr {
+  border: 0.1rem solid var(--gray-200);
+  margin-right: 24px;
 }
 
 .history ul {

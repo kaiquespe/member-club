@@ -1,59 +1,75 @@
 .fidelity {
-    padding: 24px 20px 20px 20px;
-    border-radius: 16px;
+  padding: 24px 20px 20px 20px;
+  border-radius: 16px;
 }
 
 .fidelity-card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
 
-    span {
-        display: inline-block;
-        font: var(--subtitle-md);
-        background-color: var(--gray-300);
-        border-radius: 999px;
-        padding: 4px 12px;
-    }
+  span {
+    display: inline-block;
+    font: var(--subtitle-md);
+    background-color: var(--gray-300);
+    border-radius: 999px;
+    padding: 4px 12px;
+  }
 }
 
 .fidelity-title {
-    display: inline-block;
-    font: var(--text-xs);
-    color: #888;
-    margin-bottom: 10px;
-    max-width: 172px;
+  display: inline-block;
+  font: var(--text-xs);
+  color: #888;
+  margin-bottom: 10px;
+  max-width: 172px;
 
-    h3 {
-        font: var(--subtitle-md);
-        color: var(--gray-500);
-        margin-bottom: 6px;
-    }
+  h3 {
+    font: var(--subtitle-md);
+    color: var(--gray-500);
+    margin-bottom: 6px;
+  }
 }
 
 .stamps {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
 }
 
 .stamp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 13px;
-    background-color: var(--gray-200);
-    aspect-ratio: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background-color: var(--gray-200);
+  aspect-ratio: 1;
 
-    img {
-        width: 50px;
-        height: 50px;
-    }
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .gift img {
-    width: 30px;
-    height: 30px;
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .stamp img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .gift img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fidelity-title {
+    max-width: 300px;
+  }
 }

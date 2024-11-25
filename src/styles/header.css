@@ -46,18 +46,18 @@ header {
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  
+
     &:hover {
       background-color: var(--gray-600);
     }
   }
-  
+
   button.button-disable {
     background-color: var(--gray-500);
     cursor: none;
     pointer-events: none;
   }
-  
+
   button.button-disable:hover {
     background-color: var(--gray-500);
   }
