@@ -13,3 +13,4 @@ import "./styles/progress-card.css";
 
 //js
 import "./modules/input-header.js";
+import "./modules/page-load.js";

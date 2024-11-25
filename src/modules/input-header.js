@@ -1,9 +1,13 @@
+import IMask from "imask";
 const inputHeader = document.getElementById('input-header');
 const buttonHeader = document.getElementById('button-header');
 
+IMask(inputHeader, {
+  mask: '000-000-000-000'
+});
 
 const toggleButtonState = () => {
-  if (inputHeader.value.trim() !== '') {
+  if (inputHeader.value.trim().length === 15) {
     buttonHeader.classList.remove('button-disable');
     buttonHeader.removeAttribute('disabled');
   } else {
@@ -13,3 +17,5 @@ const toggleButtonState = () => {
 };
 
 inputHeader.addEventListener('input', toggleButtonState);
+
+toggleButtonState();
