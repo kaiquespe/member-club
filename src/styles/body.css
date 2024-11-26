@@ -6,7 +6,7 @@ body {
   min-height: 100vh;
 }
 
-.container {
+#container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
@@ -34,7 +34,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container {
+  #container {
     grid-template-columns: 320px 568px; 
     grid-template-rows: 90px 240px 117px 117px; 
     gap: 16px;
