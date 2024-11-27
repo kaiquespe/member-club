@@ -1,3 +1,4 @@
+import { toast } from "../utils/notifications.js";
 import { apiConfig } from "./api-config.js";
 
 export async function updateClientAppointments({ id, appointmentHistory }) {
@@ -20,10 +21,11 @@ export async function updateClientAppointments({ id, appointmentHistory }) {
     });
 
     if (!response.ok) {
-      throw new Error(`Erro: ${response.status} - ${response.statusText}`);
+      throw new Error(
+        "Não foi possível atualizar o cliente. Tente novamente mais tarde."
+      );
     }
-  } catch (error) {
-    console.error("Erro ao atualizar cliente:", error);
-    alert("Não foi possível atualizar o cliente. Tente novamente mais tarde.");
+  } catch ({ message }) {
+    toast(message);
   }
 }

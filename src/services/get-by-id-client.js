@@ -1,3 +1,4 @@
+import { toast } from "../utils/notifications.js";
 import { apiConfig } from "./api-config";
 
 export async function clientsFetchById({ id }) {
@@ -9,10 +10,7 @@ export async function clientsFetchById({ id }) {
       throw new Error("Não foi encontrado o cliente selecionado");
     }
     return client;
-  } catch (error) {
-    console.log(error);
-    alert(
-      "Não foi encontrado o cliente selecionado. Tente novamente mais tarde"
-    );
+  } catch ({ message }) {
+    toast(message);
   }
 }

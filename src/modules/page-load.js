@@ -1,20 +1,34 @@
+
+import { modal, toast } from "../utils/notifications";
 import { renderClientData } from "./clients";
 
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("container");
   container.innerHTML = "";
 });
 
-document.getElementById("button-header").addEventListener("click", () => {
-  const input = document.getElementById("input-header");
-  const button = document.getElementById("button-header");
+const input = document.getElementById("input-header");
+const button = document.getElementById("button-header");
+
+async function handleClientRender() {
   const clientId = input.value.trim();
-  if (clientId) {
-    renderClientData(clientId);
+
+  if (clientId && !button.classList.contains("button-disable")) {
+    const client = await renderClientData(clientId);
     input.value = "";
-    button.className = "";
     button.classList.add("button-disable");
+    if (client?.loyaltyCard?.totalCuts === 10) {
+      modal();
+    }
   } else {
-    alert("Por favor, insira um ID válido!");
+    toast("Por favor, insira um ID válido!");
+  }
+}
+
+input.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    handleClientRender();
   }
 });
+
+button.addEventListener("click", handleClientRender);

@@ -12,7 +12,6 @@ export const renderClientData = async (id) => {
       progressLoad(client),
       historyLoad(client)
     );
-  } else {
-    alert("Cliente não encontrado");
+    return client;
   }
 };
